@@ -56,7 +56,7 @@ class BasecampAPI {
         return $people;
     }
 
-    // Get all active projects form the basecamp API
+    // Get all active projects from the basecamp API
     public function getProjects() {
         $projects = [];
         $response = $this->client->get('projects.json');
@@ -137,7 +137,7 @@ class BasecampAPI {
                 $results[] = json_decode($result->getBody());
             }
             else {
-                die('Error: Invalid status code');
+                die('Error: Invalid status code'); // TODO: Throw exception?
             }
         }
         return $results;

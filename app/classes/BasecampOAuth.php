@@ -53,8 +53,7 @@ class BasecampOAuth extends AbstractProvider {
 		return $response->identity->email_address;
 	}
 
-	public function userScreenName($response, AccessToken $token)
-	{
+	public function userScreenName($response, AccessToken $token) {
 		return $response->identity->email_address;
 	}
 }
