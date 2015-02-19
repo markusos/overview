@@ -1,0 +1,32 @@
+{
+    "name": "overview",
+    "name_full": "Overview",
+    "production_directory": null,
+    "ipaddress": "172.31.172.206",
+    "framework": "Laravel 4",
+    "urls": {
+        "dev": "overview.local",
+        "staging": "overview.engagedev.com",
+        "production": "overview.com"
+    },
+    "database": {
+        "dev": {
+            "username": "overview",
+            "password": "jAtqJEjDYUtz",
+            "database": "overview",
+            "hostname": "localhost"
+        },
+        "staging": {
+            "username": "overview",
+            "password": "S2z6tEDcPRZh",
+            "database": "overview",
+            "hostname": "localhost"
+        },
+        "production": {
+            "username": "overview",
+            "password": "YhMTMGZQMSEZ",
+            "database": "overview",
+            "hostname": "localhost"
+        }
+    }
+}
