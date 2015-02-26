@@ -4,8 +4,29 @@ class BasecampAPI {
 
     private $client;
 
-    function __construct($apiUrl, $accessToken, $userAgent) {
+    public function __construct($apiUrl, $accessToken, $userAgent) {
         $this->client = $this->createBasecampClient($apiUrl, $accessToken, $userAgent);
+    }
+
+    public static function authorize($accessToken, $userAgent) {
+        $client = new GuzzleHttp\Client([
+            'base_url' => 'https://launchpad.37signals.com/authorization.json',
+            'defaults' => [
+                'query'   => ['access_token' => $accessToken],
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'User-Agent' => $userAgent,
+                ],
+                'future' => true
+            ]
+        ]);
+
+        try {
+            return json_decode($client->get()->getBody());
+        }
+        catch(Exception $e) {
+            throw new Exception("Authorization failed");
+        }
     }
 
     // Create a basecamp HTTPS client

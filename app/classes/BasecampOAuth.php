@@ -3,7 +3,7 @@
 use \League\OAuth2\Client\Provider\AbstractProvider;
 use \League\OAuth2\Client\Token\AccessToken;
 
-// Basecamp OAuth
+// Basecamp OAuth Provider
 class BasecampOAuth extends AbstractProvider {
 
 	public $responseType = 'json';

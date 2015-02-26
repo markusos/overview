@@ -11,14 +11,14 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 
-    {{ HTML::style('css/base.css') }}
+    {{ HTML::style("css/base.css") }}
 </head>
 
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img src="/img/logo.png"></a>
+        <a class="navbar-brand" href="/"><img src="/img/logo.png"></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -33,7 +33,7 @@
 </nav>
 
 <div class="container">
-    @yield('content')
+    @yield("content")
 </div><!-- /.container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -41,7 +41,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.js"></script>
 
-{{ HTML::script('js/main.js') }}
+{{ HTML::script("js/main.js") }}
 
 @include('partials.templates')
 

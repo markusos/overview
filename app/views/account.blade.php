@@ -1,7 +1,7 @@
 
-@extends('layouts.master')
+@extends("layouts.master")
 
-@section('content')
+@section("content")
     <h2>Select account: </h2>
     <form action="/authorization" method="POST">
         @foreach ($accounts as $key => $account)
