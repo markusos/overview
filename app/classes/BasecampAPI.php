@@ -114,7 +114,7 @@ class BasecampAPI {
         $p = new Person();
         $p->id = '0';
         $p->name = "Unassigned";
-        $p->avatar = "/img/avatar.gif";
+        $p->avatar = "/img/avatar.png";
         $p->todos = [];
         $people[$p->id] = $p;
 
