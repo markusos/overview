@@ -44,6 +44,13 @@ body{
     background-color: #68B8CC;
 }
 
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #EEEEEE !important;
+}
+
+ul.nav a:hover { color: #888 !important; }
+
 #logo {
     height: 40px;
 }
@@ -51,8 +58,6 @@ body{
 #connect {
     display: none;
 }
-
-
 
 @media screen and (min-width: 992px){
 	body{
